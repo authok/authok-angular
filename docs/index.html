@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>@authok/authok-angular</title>
-    <meta name="description" content="Documentation for @authok/authok-angular" />
+    <meta
+      name="description"
+      content="Documentation for @authok/authok-angular"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <script async src="assets/js/search.js" id="search-script"></script>
@@ -140,9 +143,7 @@
             </a>
             <ul>
               <li>
-                <a href="https://authok.github.io/authok-angular/"
-                  >API 参考</a
-                >
+                <a href="https://authok.github.io/authok-angular/">API 参考</a>
               </li>
               <li>
                 <a href="https://authok.cn/docs/quickstart/spa/angular-next"
@@ -212,8 +213,8 @@
             </a>
             <p>
               Install the SDK into your application by importing
-              <code>AuthModule</code> and configuring with your Authok domain and
-              client ID:
+              <code>AuthModule</code> and configuring with your Authok domain
+              and client ID:
             </p>
             <pre><code class="language-js"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">BrowserModule</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@angular/platform-browser&#039;</span><span style="color: #000000">;</span>
 <span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">NgModule</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@angular/core&#039;</span><span style="color: #000000">;</span>
@@ -386,8 +387,8 @@
             </p>
             <p>
               If an unauthenticated user tries to access this route, they will
-              first be redirected to Authok to log in before returning to the URL
-              they tried to get to before login:
+              first be redirected to Authok to log in before returning to the
+              URL they tried to get to before login:
             </p>
             <pre><code class="language-js"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">NgModule</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@angular/core&#039;</span><span style="color: #000000">;</span>
 <span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">Routes</span><span style="color: #000000">, </span><span style="color: #001080">RouterModule</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@angular/router&#039;</span><span style="color: #000000">;</span>
@@ -548,9 +549,9 @@
 
 <span style="color: #000000">      </span><span style="color: #008000">// Using an absolute URI</span>
 <span style="color: #000000">      {</span>
-<span style="color: #000000">        </span><span style="color: #001080">uri:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;https://your-domain.authok.cn/api/v2/users&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">uri:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;https://your-domain.authok.cn/api/v1/users&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">        </span><span style="color: #001080">tokenOptions:</span><span style="color: #000000"> {</span>
-<span style="color: #000000">          </span><span style="color: #001080">audience:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;https://your-domain.com/api/v2/&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">          </span><span style="color: #001080">audience:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;https://your-domain.com/api/v1/&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">          </span><span style="color: #001080">scope:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;read:users&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">        },</span>
 <span style="color: #000000">      },</span>
@@ -766,7 +767,9 @@
               <h3>Organizations</h3>
             </a>
             <p>
-              <a href="https://docs.authok.cn/docs/organizations">Organizations</a>
+              <a href="https://docs.authok.cn/docs/organizations"
+                >Organizations</a
+              >
               is a set of features that provide better support for developers
               who build and maintain SaaS and Business-to-Business (B2B)
               applications.
@@ -1089,7 +1092,9 @@
                 JavaScript rules
               </li>
             </ul>
-            <p><a href="https://docs.authok.cn/why-authok">为什么选择 Authok?</a></p>
+            <p>
+              <a href="https://docs.authok.cn/why-authok">为什么选择 Authok?</a>
+            </p>
             <a
               href="#license"
               id="license"

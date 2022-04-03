@@ -18,7 +18,7 @@ A library for integrating [Authok](https://authok.cn) into an Angular 9+ applica
 - [贡献](#contributing)
 - [支持 + 反馈](#support--feedback)
 - [Vulnerability Reporting](#vulnerability-reporting)
-- [Authok是什么](#what-is-authok)
+- [Authok 是什么](#what-is-authok)
 - [License](#license)
 
 ## 文档
@@ -29,6 +29,7 @@ A library for integrating [Authok](https://authok.cn) into an Angular 9+ applica
 ## 安装
 
 使用 npm:
+
 ```sh
 npm install @authok/authok-angular
 ```
@@ -292,9 +293,9 @@ AuthModule.forRoot({
 
       // Using an absolute URI
       {
-        uri: 'https://your-domain.authok.com/api/v2/users',
+        uri: 'https://your-domain.authok.com/api/v1/users',
         tokenOptions: {
-          audience: 'https://your-domain.com/api/v2/',
+          audience: 'https://your-domain.com/api/v1/',
           scope: 'read:users',
         },
       },
@@ -550,7 +551,7 @@ For support or to provide feedback, please [raise an issue on our issue tracker]
 
 Please do not report security vulnerabilities on the public GitHub issue tracker. The [Responsible Disclosure Program](https://authok.cn/responsible-disclosure-policy) details the procedure for disclosing security issues.
 
-## Authok是什么?
+## Authok 是什么?
 
 Authok helps you to easily:
 

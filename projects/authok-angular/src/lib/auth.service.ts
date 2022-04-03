@@ -47,7 +47,8 @@ import { AuthState } from './auth.state';
   providedIn: 'root',
 })
 export class AuthService<TAppState extends AppState = AppState>
-  implements OnDestroy {
+  implements OnDestroy
+{
   private appStateSubject$ = new ReplaySubject<TAppState>(1);
 
   // https://stackoverflow.com/a/41177163
@@ -176,7 +177,7 @@ export class AuthService<TAppState extends AppState = AppState>
    * logout();
    * ```
    *
-   * Clears the application session and performs a redirect to `/v2/logout`, using
+   * Clears the application session and performs a redirect to `/v1/logout`, using
    * the parameters provided as arguments, to clear the Authok session.
    * If the `federated` option is specified it also clears the Identity Provider session.
    * If the `localOnly` option is specified, it only clears the application session.

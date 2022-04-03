@@ -11,7 +11,7 @@
     "target": "http://127.0.0.1:3000",
     "secure": false
   },
-  "/v2/logout": {
+  "/v1/logout": {
     "target": "http://127.0.0.1:3000",
     "secure": false
   }

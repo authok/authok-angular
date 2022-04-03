@@ -56,7 +56,7 @@ describe('AuthService', () => {
     spyOn(authokClient, 'logout');
     spyOn(authokClient, 'getTokenSilently').and.resolveTo('__access_token__');
     spyOn(authokClient, 'buildAuthorizeUrl').and.resolveTo('/authorize');
-    spyOn(authokClient, 'buildLogoutUrl').and.returnValue('/v2/logout');
+    spyOn(authokClient, 'buildLogoutUrl').and.returnValue('/v1/logout');
 
     spyOn(authokClient, 'getTokenWithPopup').and.resolveTo(
       '__access_token_from_popup__'
