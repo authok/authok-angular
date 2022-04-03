@@ -80,7 +80,7 @@ import { AuthModule } from '@authok/authok-angular';
 export class AppModule {}
 ```
 
-### Add login to your application
+### 添加登录
 
 Next, inject the `AuthService` service into a component where you intend to provide the functionality to log in, by adding the `AuthService` type to your constructor. Then, provide a `loginWithRedirect()` method and call `this.auth.loginWithRedirect()` to log the user into the application.
 
@@ -121,7 +121,7 @@ On your template, provide a button that will allow the user to log in to the app
 </button>
 ```
 
-### Add logout to your application
+### 添加注销
 
 Add a `logout` method to your component and call the SDK's `logout` method:
 
@@ -140,7 +140,7 @@ Then on your component's template, add a button that will log the user out of th
 </button>
 ```
 
-### Display the user profile
+### 显示用户信息
 
 Access the `user$` observable on the `AuthService` instance to retrieve the user profile. This observable already heeds the `isAuthenticated$` observable, so you do not need to check if the user is authenticated before using it:
 
@@ -159,7 +159,7 @@ Access the `idTokenClaims$` observable on the `AuthService` instance to retrieve
 authService.idTokenClaims$.subscribe((claims) => console.log(claims));
 ```
 
-### Handle errors
+### 错误处理
 
 Errors in the login flow can be captured by subscribing to the `error$` observable:
 
@@ -167,7 +167,7 @@ Errors in the login flow can be captured by subscribing to the `error$` observab
 authService.error$.subscribe((error) => console.log(error));
 ```
 
-### Protect a route
+### 保护路由
 
 To ensure that a route can only be visited by authenticated users, add the built-in `AuthGuard` type to the `canActivate` property on the route you wish to protect.
 
@@ -204,7 +204,7 @@ const routes: Routes = [
 export class AppRoutingModule {}
 ```
 
-### Call an API
+### 调用 API
 
 The SDK provides an `HttpInterceptor` that automatically attaches access tokens to outgoing requests when using the built-in `HttpClient`. However, you must provide configuration that tells the interceptor which requests to attach access tokens to.
 
@@ -344,7 +344,7 @@ export class MyComponent {
 }
 ```
 
-#### Handling errors
+#### 处理错误
 
 Whenever the SDK fails to retrieve an Access Token, either as part of the above interceptor or when manually calling `AuthService.getAccessTokenSilently` and `AuthService.getAccessTokenWithPopup`, it will emit the corresponding error in the `AuthService.error$` observable.
 
@@ -369,7 +369,7 @@ ngOnInit() {
 }
 ```
 
-### Dynamic Configuration
+### 动态配置
 
 Instead of using `AuthModule.forRoot` to specify auth configuration, you can provide a factory function using `APP_INITIALIZER` to load your config from an external source before the auth module is loaded, and provide your configuration using `AuthClientConfig.set`.
 
@@ -442,7 +442,7 @@ Using Organizations, you can:
 
 Note that Organizations is currently only available to customers on our Enterprise and Startup subscription plans.
 
-#### Log in to an organization
+#### 登录到组织
 
 Log in to an organization by specifying the `organization` parameter importing the `AuthModule`:
 
@@ -468,7 +468,7 @@ this.auth.loginWithPopup({
 });
 ```
 
-#### Accept user invitations
+#### 接受用户邀请
 
 Accept a user invitation through the SDK by creating a route within your application that can handle the user invitation URL, and log the user in by passing the `organization` and `invitation` parameters from this URL. You can either use `loginWithRedirect` or `loginWithPopup` as needed.
 
@@ -501,17 +501,17 @@ This library makes use of the `window` object in a couple of places during initi
 
 See [Guards, and creating separate modules](https://github.com/angular/universal/blob/master/docs/gotchas.md#strategy-2-guards) in the Angular Universal "Gotchas" document.
 
-## Development
+## 开发
 
-### Build
+### 构建
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-### Running unit tests
+### 运行单元测试
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-### Running end-to-end tests
+### 运行端对端测试
 
 The end-to-end tests are executed using [Cypress](https://www.cypress.io/) against the built-in playground app.
 
@@ -536,18 +536,18 @@ The playground application is preconfigured to call the above endpoint when clic
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-## Contributing
+## 贡献
 
 We appreciate feedback and contribution to this repo! Before you get started, please see the following:
 
 - [Authok's general contribution guidelines](https://github.com/authok/open-source-template/blob/master/GENERAL-CONTRIBUTING.md)
 - [Authok's code of conduct guidelines](https://github.com/authok/open-source-template/blob/master/CODE-OF-CONDUCT.md)
 
-## Support + Feedback
+## 支持 + 反馈
 
 For support or to provide feedback, please [raise an issue on our issue tracker](https://github.com/authok/authok-angular/issues).
 
-## Vulnerability Reporting
+## 缺陷报告
 
 Please do not report security vulnerabilities on the public GitHub issue tracker. The [Responsible Disclosure Program](https://authok.cn/responsible-disclosure-policy) details the procedure for disclosing security issues.
 
@@ -564,6 +564,6 @@ Authok helps you to easily:
 
 [为什么选择 Authok?](https://docs.authok.cn/why-authok)
 
-## License
+## 许可
 
 This project is licensed under the MIT license. See the [LICENSE](https://github.com/authok/authok-angular/blob/master/LICENSE) file for more info.
