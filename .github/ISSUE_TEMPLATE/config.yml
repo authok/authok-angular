@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Authok Community
+    url: https://community.authok.cn/c/sdks/5
+    about: Discuss this SDK in the Authok Community forums
+  - name: FAQ
+    url: https://github.com/authok/authok-angular/blob/master/FAQ.md
+    about: Read the FAQ to get answers to common issues
+  - name: SDK API Documentation
+    url: https://authok.github.io/authok-angular/
+    about: Read the API documentation for this SDK
+  - name: Library Documentation
+    url: https://authok.com/docs/libraries/authok-angular-spa
+    about: Read the library docs on Authok.cn

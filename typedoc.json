@@ -1,0 +1,10 @@
+{
+  "entryPoints": ["./projects/authok-angular/src/lib"],
+  "exclude": ["**/*.spec.ts"],
+  "tsconfig": "./projects/authok-angular/tsconfig.lib.json",
+  "out": "docs",
+  "excludeExternals": true,
+  "excludePrivate": true,
+  "hideGenerator": true,
+  "readme": "./README.md"
+}

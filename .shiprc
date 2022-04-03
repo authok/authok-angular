@@ -1,0 +1,4 @@
+{
+    "packagePath": "projects/authok-angular",
+    "postbump": "npm run build"
+}
