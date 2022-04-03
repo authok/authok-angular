@@ -110,15 +110,15 @@
             </a>
             <p>
               A library for integrating
-              <a href="https://authok.com">Authok</a> into an Angular 9+
+              <a href="https://authok.cn">Authok</a> into an Angular 9+
               application.
             </p>
             <a
-              href="#table-of-contents"
-              id="table-of-contents"
+              href="#内容"
+              id="内容"
               style="color: inherit; text-decoration: none"
             >
-              <h2>Table of Contents</h2>
+              <h2>内容</h2>
             </a>
             <ul>
               <li><a href="#documentation">文档</a></li>
@@ -129,14 +129,14 @@
               <li><a href="#contributing">贡献</a></li>
               <li><a href="#support--feedback">支持 + 反馈</a></li>
               <li>
-                <a href="#vulnerability-reporting">缺陷报告</a>
+                <a href="#vulnerability-reporting">Vulnerability Reporting</a>
               </li>
-              <li><a href="#what-is-authok">Authok是什么</a></li>
-              <li><a href="#license">许可</a></li>
+              <li><a href="#what-is-authok">Authok 是什么</a></li>
+              <li><a href="#license">License</a></li>
             </ul>
             <a
-              href="#documentation"
-              id="documentation"
+              href="#文档"
+              id="文档"
               style="color: inherit; text-decoration: none"
             >
               <h2>文档</h2>
@@ -146,14 +146,14 @@
                 <a href="https://authok.github.io/authok-angular/">API 参考</a>
               </li>
               <li>
-                <a href="https://authok.cn/docs/quickstart/spa/angular-next"
-                  >快速开始</a
+                <a href="https://docs.authok.cn/docs/quickstarts/spa/angular"
+                  >快速参考</a
                 >
               </li>
             </ul>
             <a
-              href="#installation"
-              id="installation"
+              href="#安装"
+              id="安装"
               style="color: inherit; text-decoration: none"
             >
               <h2>安装</h2>
@@ -168,48 +168,34 @@
             <pre><code class="language-sh"><span style="color: #000000">ng add @authok/authok-angular</span>
 </code></pre>
             <a
-              href="#getting-started"
-              id="getting-started"
+              href="#快速开始"
+              id="快速开始"
               style="color: inherit; text-decoration: none"
             >
-              <h2>Getting Started</h2>
+              <h2>快速开始</h2>
             </a>
             <ul>
               <li>
-                <a href="#register-the-authentication-module"
-                  >Register the authentication module</a
-                >
+                <a href="#register-the-authentication-module">注册认证模块</a>
               </li>
-              <li>
-                <a href="#add-login-to-your-application"
-                  >Add login to your application</a
-                >
-              </li>
-              <li>
-                <a href="#add-logout-to-your-application"
-                  >Add logout to your application</a
-                >
-              </li>
-              <li>
-                <a href="#display-the-user-profile">Display the user profile</a>
-              </li>
-              <li><a href="#protect-a-route">Protect a route</a></li>
-              <li><a href="#call-an-api">Call an API</a></li>
-              <li>
-                <a href="#dynamic-configuration">Dynamic configuration</a>
-              </li>
+              <li><a href="#add-login-to-your-application">添加登录</a></li>
+              <li><a href="#add-logout-to-your-application">添加注销</a></li>
+              <li>[显示用户信息]](#display-the-user-profile)</li>
+              <li><a href="#protect-a-route">保护路由</a></li>
+              <li><a href="#call-an-api">调用 API</a></li>
+              <li><a href="#dynamic-configuration">动态配置</a></li>
               <li>
                 <a href="#using-multiple-oauth-providers"
-                  >Using multiple OAuth providers</a
+                  >使用多个 OAuth providers</a
                 >
               </li>
             </ul>
             <a
-              href="#register-the-authentication-module"
-              id="register-the-authentication-module"
+              href="#注册认证模块"
+              id="注册认证模块"
               style="color: inherit; text-decoration: none"
             >
-              <h3>Register the authentication module</h3>
+              <h3>注册认证模块</h3>
             </a>
             <p>
               Install the SDK into your application by importing
@@ -240,11 +226,11 @@
 <span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">class</span><span style="color: #000000"> </span><span style="color: #267F99">AppModule</span><span style="color: #000000"> {}</span>
 </code></pre>
             <a
-              href="#add-login-to-your-application"
-              id="add-login-to-your-application"
+              href="#添加登录"
+              id="添加登录"
               style="color: inherit; text-decoration: none"
             >
-              <h3>Add login to your application</h3>
+              <h3>添加登录</h3>
             </a>
             <p>
               Next, inject the <code>AuthService</code> service into a component
@@ -299,11 +285,11 @@
 <span style="color: #800000">&lt;/button&gt;</span>
 </code></pre>
             <a
-              href="#add-logout-to-your-application"
-              id="add-logout-to-your-application"
+              href="#添加注销"
+              id="添加注销"
               style="color: inherit; text-decoration: none"
             >
-              <h3>Add logout to your application</h3>
+              <h3>添加注销</h3>
             </a>
             <p>
               Add a <code>logout</code> method to your component and call the
@@ -325,11 +311,11 @@
 <span style="color: #800000">&lt;/button&gt;</span>
 </code></pre>
             <a
-              href="#display-the-user-profile"
-              id="display-the-user-profile"
+              href="#显示用户信息"
+              id="显示用户信息"
               style="color: inherit; text-decoration: none"
             >
-              <h3>Display the user profile</h3>
+              <h3>显示用户信息</h3>
             </a>
             <p>
               Access the <code>user$</code> observable on the
@@ -360,11 +346,11 @@
             <pre><code class="language-js"><span style="color: #001080">authService</span><span style="color: #000000">.</span><span style="color: #001080">idTokenClaims$</span><span style="color: #000000">.</span><span style="color: #795E26">subscribe</span><span style="color: #000000">((</span><span style="color: #001080">claims</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">claims</span><span style="color: #000000">));</span>
 </code></pre>
             <a
-              href="#handle-errors"
-              id="handle-errors"
+              href="#错误处理"
+              id="错误处理"
               style="color: inherit; text-decoration: none"
             >
-              <h3>Handle errors</h3>
+              <h3>错误处理</h3>
             </a>
             <p>
               Errors in the login flow can be captured by subscribing to the
@@ -373,11 +359,11 @@
             <pre><code class="language-js"><span style="color: #001080">authService</span><span style="color: #000000">.</span><span style="color: #001080">error$</span><span style="color: #000000">.</span><span style="color: #795E26">subscribe</span><span style="color: #000000">((</span><span style="color: #001080">error</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">error</span><span style="color: #000000">));</span>
 </code></pre>
             <a
-              href="#protect-a-route"
-              id="protect-a-route"
+              href="#保护路由"
+              id="保护路由"
               style="color: inherit; text-decoration: none"
             >
-              <h3>Protect a route</h3>
+              <h3>保护路由</h3>
             </a>
             <p>
               To ensure that a route can only be visited by authenticated users,
@@ -420,11 +406,11 @@
 <span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">class</span><span style="color: #000000"> </span><span style="color: #267F99">AppRoutingModule</span><span style="color: #000000"> {}</span>
 </code></pre>
             <a
-              href="#call-an-api"
-              id="call-an-api"
+              href="#调用-api"
+              id="调用-api"
               style="color: inherit; text-decoration: none"
             >
-              <h3>Call an API</h3>
+              <h3>调用 API</h3>
             </a>
             <p>
               The SDK provides an <code>HttpInterceptor</code> that
@@ -549,7 +535,7 @@
 
 <span style="color: #000000">      </span><span style="color: #008000">// Using an absolute URI</span>
 <span style="color: #000000">      {</span>
-<span style="color: #000000">        </span><span style="color: #001080">uri:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;https://your-domain.authok.cn/api/v1/users&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">uri:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;https://your-domain.authok.com/api/v1/users&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">        </span><span style="color: #001080">tokenOptions:</span><span style="color: #000000"> {</span>
 <span style="color: #000000">          </span><span style="color: #001080">audience:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;https://your-domain.com/api/v1/&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">          </span><span style="color: #001080">scope:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;read:users&#039;</span><span style="color: #000000">,</span>
@@ -629,11 +615,11 @@
 <span style="color: #000000">}</span>
 </code></pre>
             <a
-              href="#handling-errors"
-              id="handling-errors"
+              href="#处理错误"
+              id="处理错误"
               style="color: inherit; text-decoration: none"
             >
-              <h4>Handling errors</h4>
+              <h4>处理错误</h4>
             </a>
             <p>
               Whenever the SDK fails to retrieve an Access Token, either as part
@@ -666,11 +652,11 @@
 <span style="color: #000000">}</span>
 </code></pre>
             <a
-              href="#dynamic-configuration"
-              id="dynamic-configuration"
+              href="#动态配置"
+              id="动态配置"
               style="color: inherit; text-decoration: none"
             >
-              <h3>Dynamic Configuration</h3>
+              <h3>动态配置</h3>
             </a>
             <p>
               Instead of using <code>AuthModule.forRoot</code> to specify auth
@@ -815,11 +801,11 @@
               on our Enterprise and Startup subscription plans.
             </p>
             <a
-              href="#log-in-to-an-organization"
-              id="log-in-to-an-organization"
+              href="#登录到组织"
+              id="登录到组织"
               style="color: inherit; text-decoration: none"
             >
-              <h4>Log in to an organization</h4>
+              <h4>登录到组织</h4>
             </a>
             <p>
               Log in to an organization by specifying the
@@ -844,11 +830,11 @@
 <span style="color: #000000">});</span>
 </code></pre>
             <a
-              href="#accept-user-invitations"
-              id="accept-user-invitations"
+              href="#接受用户邀请"
+              id="接受用户邀请"
               style="color: inherit; text-decoration: none"
             >
-              <h4>Accept user invitations</h4>
+              <h4>接受用户邀请</h4>
             </a>
             <p>
               Accept a user invitation through the SDK by creating a route
@@ -909,18 +895,18 @@
               in the Angular Universal &quot;Gotchas&quot; document.
             </p>
             <a
-              href="#development"
-              id="development"
+              href="#开发"
+              id="开发"
               style="color: inherit; text-decoration: none"
             >
-              <h2>Development</h2>
+              <h2>开发</h2>
             </a>
             <a
-              href="#build"
-              id="build"
+              href="#构建"
+              id="构建"
               style="color: inherit; text-decoration: none"
             >
-              <h3>Build</h3>
+              <h3>构建</h3>
             </a>
             <p>
               Run <code>ng build</code> to build the project. The build
@@ -928,22 +914,22 @@
               the <code>--prod</code> flag for a production build.
             </p>
             <a
-              href="#running-unit-tests"
-              id="running-unit-tests"
+              href="#运行单元测试"
+              id="运行单元测试"
               style="color: inherit; text-decoration: none"
             >
-              <h3>Running unit tests</h3>
+              <h3>运行单元测试</h3>
             </a>
             <p>
               Run <code>ng test</code> to execute the unit tests via
               <a href="https://karma-runner.github.io">Karma</a>.
             </p>
             <a
-              href="#running-end-to-end-tests"
-              id="running-end-to-end-tests"
+              href="#运行端对端测试"
+              id="运行端对端测试"
               style="color: inherit; text-decoration: none"
             >
-              <h3>Running end-to-end tests</h3>
+              <h3>运行端对端测试</h3>
             </a>
             <p>
               The end-to-end tests are executed using
@@ -1008,11 +994,11 @@
               >.
             </p>
             <a
-              href="#contributing"
-              id="contributing"
+              href="#贡献"
+              id="贡献"
               style="color: inherit; text-decoration: none"
             >
-              <h2>Contributing</h2>
+              <h2>贡献</h2>
             </a>
             <p>
               We appreciate feedback and contribution to this repo! Before you
@@ -1033,11 +1019,11 @@
               </li>
             </ul>
             <a
-              href="#support--feedback"
-              id="support--feedback"
+              href="#支持--反馈"
+              id="支持--反馈"
               style="color: inherit; text-decoration: none"
             >
-              <h2>Support + Feedback</h2>
+              <h2>支持 + 反馈</h2>
             </a>
             <p>
               For support or to provide feedback, please
@@ -1046,11 +1032,11 @@
               >.
             </p>
             <a
-              href="#vulnerability-reporting"
-              id="vulnerability-reporting"
+              href="#缺陷报告"
+              id="缺陷报告"
               style="color: inherit; text-decoration: none"
             >
-              <h2>Vulnerability Reporting</h2>
+              <h2>缺陷报告</h2>
             </a>
             <p>
               Please do not report security vulnerabilities on the public GitHub
@@ -1060,11 +1046,11 @@
               > details the procedure for disclosing security issues.
             </p>
             <a
-              href="#what-is-authok"
-              id="what-is-authok"
+              href="#authok-是什么"
+              id="authok-是什么"
               style="color: inherit; text-decoration: none"
             >
-              <h2>Authok是什么?</h2>
+              <h2>Authok 是什么?</h2>
             </a>
             <p>Authok helps you to easily:</p>
             <ul>
@@ -1096,8 +1082,8 @@
               <a href="https://docs.authok.cn/why-authok">为什么选择 Authok?</a>
             </p>
             <a
-              href="#license"
-              id="license"
+              href="#许可"
+              id="许可"
               style="color: inherit; text-decoration: none"
             >
               <h2>许可</h2>

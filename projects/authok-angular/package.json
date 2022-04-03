@@ -1,6 +1,6 @@
 {
   "name": "@authok/authok-angular",
-  "version": "1.9.0",
+  "version": "1.0.1",
   "description": "Authok SDK for Angular Single Page Applications (SPA)",
   "keywords": [
     "authok",
@@ -31,8 +31,11 @@
     "@angular/router": ">=9 <=13"
   },
   "dependencies": {
-    "tslib": "^2.0.0",
-    "@authok/authok-spa-js": "^1.19.7"
+    "@authok/authok-spa-js": "^1.19.7",
+    "tslib": "^2.0.0"
   },
-  "schematics": "./schematics/collection.json"
+  "schematics": "./schematics/collection.json",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
 }
