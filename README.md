@@ -45,7 +45,7 @@ ng add @authok/authok-angular
 - [注册认证模块](#register-the-authentication-module)
 - [添加登录](#add-login-to-your-application)
 - [添加注销](#add-logout-to-your-application)
-- [显示用户信息](#display-the-user-profile)
+- [显示用户信息](#显示用户信息)
 - [保护路由](#protect-a-route)
 - [调用 API](#call-an-api)
 - [动态配置](#dynamic-configuration)
